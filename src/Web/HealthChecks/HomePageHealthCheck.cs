@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.eShopWeb.Web.HealthChecks
 {
-    public class HomePageHealthCheck : IHealthCheck
+      public class HomePageHealthCheck : IHealthCheck
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
 

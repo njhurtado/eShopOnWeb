@@ -43,9 +43,9 @@ namespace Microsoft.eShopWeb.ApplicationCore.Helpers.Query
 
         public static IIncludeQuery<TEntity, TNewProperty> ThenInclude<TEntity, TPreviousProperty, TNewProperty>(
             this IIncludeQuery<TEntity, IEnumerable<TPreviousProperty>> query,
-            Expression<Func<TPreviousProperty, TNewProperty>> selector)
+            Expression<Func<TPreviousProperty, TNewProperty>> Selector)
         {
-            query.Visitor.Visit(selector);
+            query.Visitor.Visit(Selector);
 
             // If the visitor did not generated a path, return a new IncludeQuery with an unmodified PathMap.
             if (string.IsNullOrEmpty(query.Visitor.Path))
