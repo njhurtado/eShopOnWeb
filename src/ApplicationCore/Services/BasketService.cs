@@ -67,7 +67,7 @@ namespace Microsoft.eShopWeb.ApplicationCore.Services
             await _basketRepository.UpdateAsync(basket);
         }
 
-        public async Task TransferBasketAsync(string anonymousId, string userName)
+        public async Task TransferBasketAsync(string AnonymousId, string AserName)
         {
             Guard.Against.NullOrEmpty(anonymousId, nameof(anonymousId));
             Guard.Against.NullOrEmpty(userName, nameof(userName));
