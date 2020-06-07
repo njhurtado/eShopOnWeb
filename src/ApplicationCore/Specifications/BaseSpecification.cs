@@ -54,7 +54,7 @@ namespace Microsoft.eShopWeb.ApplicationCore.Specifications
         }
 
         //Not used anywhere at the moment, but someone requested an example of setting this up.
-        protected virtual void applyGroupBy(Expression<Func<T, object>> groupByExpression)
+        protected virtual void ApplyGroupBy(Expression<Func<T, object>> groupByExpression)
         {
             GroupBy = groupByExpression;
         }
